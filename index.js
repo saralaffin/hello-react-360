@@ -15,6 +15,7 @@ export default class Hello360 extends React.Component {
     // Reference the count in our UI
     return (
       <View style={styles.panel}>
+        <Text style={styles.greeting}>{this.props.greetingMsg}</Text>
         <VrButton onClick={this._incrementCount} style={styles.greetingBox}>
           <Text style={styles.greeting}>{`Count: ${this.state.count}`}</Text>
         </VrButton>
